@@ -7,10 +7,10 @@ echo "Pulling latest changes from origin master..."
 git pull origin master
 
 echo "Installing dependencies..."
-npm install --yes
+pnpm install
 
 echo "Creating production build..."
-npm run build
+pnpm run build
 
 echo "Restarting application..."
 pm2 reload 0
